@@ -1,10 +1,11 @@
-def fun():
-    list = [1, 2, 3, 4, 5]
-    value = 1
-    for i in range(0, len(list)):
-        value = value * list[i]
+# 25. Multiplication of a list.
+list = eval(input("Enter the elements: "))
+def q25(list):
+    product = 1
+    i = 0
+    while i < len(list):
+        product *= list[i]
+        i += 1
+    print(f"The product of given numbers of a list is {product}.")
+q25(list)
 
-    print(value)
-
-
-fun()
